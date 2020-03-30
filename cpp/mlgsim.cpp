@@ -1,7 +1,5 @@
 #include <iostream>
 
-#include "stdafx.h"
-
 int main() {
 	std::cout
 		<< "MLG SIMULATOR - By Alex Pawelko based off of ideas from Minikloon.\n\n"
@@ -30,6 +28,13 @@ int main() {
 	const int costMtnDewRed = 30;
 	const int mlgpptPerDewRed = 23;
 
+	/*	
+		In my fork, I make a minor difference:	
+			New error message
+			Show hot-key to terminate
+			Removed unnessary header
+	*/
+
 	while (turn <= totalTurns) {
 		std::cout << std::endl << std::endl;
 		std::cout << "You're at turn " << turn << "!" << std::endl;
@@ -41,33 +46,32 @@ int main() {
 		std::cout << "You currently are earning " << doritos * mlgpptPerDorito + mtnDew * mlgpptMtnDew + mtnDewRed * mlgpptPerDewRed << " points per turn." << std::endl;
 		std::cout << "You have " << mlgPoints << " MLG Points.\n" << std::endl;
 
-
-		std::cout << "How many litres of Mountain Dew do you want to buy?\n";
+		std::cout << "How many litres of Mountain Dew do you want to buy? (Ctrl+C: terminate)\n";
 
 		int mtnDewToBuy = 0;
 		std::cin >> mtnDewToBuy;
 
 		int mtnDewCostTotal = mtnDewToBuy * costMtnDew;
 		if (mtnDewCostTotal < 0) {
-			std::cout << "Stop trying to scam the system!, the programmer isn't an idiot! You can't buy negative MLG stuff! YOU LOSE YOUR TURN!\n";
+			std::cout << "Baldi can help you, BECAUSE YOU INPUTED NEGETIVE NUMBER!\n";
 		}
-		std::cout << "How many doritos do you want to buy?\n";
+		std::cout << "How many doritos do you want to buy? (Ctrl+C: terminate)\n";
 
 		int doritosToBuy = 0;
 		std::cin >> doritosToBuy;
 
 		int doritosCostTotal = doritosToBuy * costDoritos;
 		if (doritosCostTotal < 0) {
-			std::cout << "Stop trying to scam the system!, the programmer isn't an idiot! You can't buy negative MLG stuff! YOU LOSE YOUR TURN!\n";
+			std::cout << "Baldi can help you, BECAUSE YOU INPUTED NEGETIVE NUMBER!\n";
 		}
-		std::cout << "How many litres of Red Dew do you wanna buy?\n";
+		std::cout << "How many litres of Red Dew do you wanna buy? (Ctrl+C: terminate)\n";
 
 		int mtnDewRedToBuy = 0;
 		std::cin >> mtnDewRedToBuy;
 
 		int mtnDewRedCostTotal = mtnDewRedToBuy * costMtnDewRed;
 		if (mtnDewCostTotal < 0) {
-			std::cout << "Stop trying to scam the system!, the programmer isn't an idiot! You can't buy negative MLG stuff! YOU LOSE YOUR TURN";
+			std::cout << "Baldi can help you, BECAUSE YOU INPUTED NEGETIVE NUMBER!";
 			continue;
 		}
 
