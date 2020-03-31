@@ -7,6 +7,6 @@ MLG Simulator was my first coding project ever. I wanted to make a math practice
 
 ## Disclaimer
 
-All source code are base on original developer (Notoh) which I added Makefile and compiled binary (soon)<br>
+All source code are base on original developer (Notoh) which I added Makefile<br>
 You can fork either original one or this.<br>
 However, all copyright still remain Notoh, not me (rk0_d)
