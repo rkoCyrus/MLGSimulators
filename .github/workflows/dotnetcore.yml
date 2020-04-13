@@ -1,5 +1,6 @@
 name: .NET Core
 
+# Run on specific folders
 on:
   push:
     branches: [ master/csharp/* ]
