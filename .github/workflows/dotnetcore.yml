@@ -3,10 +3,10 @@ name: .NET Core
 on:
   push:
     branches:
-      - 'master/csharp/*'
+      - master/csharp/*
   pull_request:
     branches: 
-      - 'master/csharp/*'
+      - master/csharp/*
 
 jobs:
   build:
