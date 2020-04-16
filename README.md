@@ -1,5 +1,7 @@
 # MLGSimulatorOtherLangs
-Other language versions of MLG Simulator. 
+Other language versions of MLG Simulator.<br>
+![.Net Core Build (C#)](https://github.com/rkoCyrus/MLGSimulators/workflows/.NET%20Core/badge.svg)<br>
+![C & C++ build](https://github.com/rkoCyrus/MLGSimulators/workflows/C/C++%20CI/badge.svg)
 
 ## Some context
 
